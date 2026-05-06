@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Backend Developer">
+    <title>Julia D. | Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo">Julia<span>.</span></div>
+            
+            <nav class="top-nav">
+                <ul class="nav-menu">
+                    <li><a href="#about">About me</a></li>
+                    <li class="dropdown">
+                        <a href="#skills">Skills ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#skills">Tech Stack</a></li>
+                            <li><a href="#skills">Tools</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <audio src="media/the_mountain.mp3" controls class="mini-player"></audio>
+                <a href="https://github.com/Tomorrowllbethere" target="_blank" class="btn-outline">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero-section container">
+            <aside class="hero-image-box accent-outline">
+                <img src="img/me.jpg" alt="Profile picture" class="profile-img">
+            </aside>
+            <article class="hero-text">
+                <p class="greeting">Hi, I'm Julia</p>
+                <h1><b>Software Engineer</b></h1>
+                <p><i>I'm fixing issues, solving problems and optimizing everything.</i></p>
+                <div class="hero-btns">
+                    <a href="media\tester.pdf" download class="btn-primary">Download CV</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="skills" class="skills-section container">
+            <h2 class="section-title">Skills & Certificates</h2>
+            <ol class="main-list">
+                <li class="skill-category accent-outline">
+                    <h3>Backend Technology</h3>
+                    <ul class="sub-list">
+                        <li><b>Python</b> - Django, FastAPI</li>
+                        <li><b>C#</b> - .NET Core</li>
+                        <li><b>REST API</b> - Architecture</li>
+                    </ul>
+                </li>
+                <li class="skill-category accent-outline">
+                    <h3>Databases & Tools</h3>
+                    <ul class="sub-list">
+                        <li><b>PostgreSQL</b> - Relational DB</li>
+                        <li><b>Redis</b> - Caching</li>
+                        <li><b>Git & Docker</b> - Version control & DevOps</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="projects-preview container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="carousel-wrapper">
+                <button class="carousel-btn">&lt;</button>
+                
+                <div class="cards-container">
+                    <article class="project-card accent-outline">
+                        <img src="img\assist_you_welcome.png" alt="AssistYou" class="card-img">
+                        <h3>Assist you</h3>
+                        <p> Django backend architecture for task management.</p>
+                    </article>
+                    <article class="project-card accent-outline">
+                        <img src="img\fly_ bee.png" alt="Python Game" class="card-img">
+                        <h3>"Fly, Bee, Fly"</h3>
+                        <p>Built with PyGame. Object-oriented programming principles applied.</p>
+                    </article>
+                </div>
+                
+                <button class="carousel-btn">&gt;</button>
+            </div>
+
+            <div class="center-btn">
+                <a href="projects.html" class="btn-primary">See more projects</a>
+            </div>
+        </section>
+
+        <section class="home-contact-cta container">
+            <h2>Let's build something worthy together...</h2>
+            <a href="contact.html" class="btn-primary large-btn">Contact Me</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Julia D. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="contact.html">Contacts</a>
+                <a href="https://www.linkedin.com/in/yuliia-diakiv/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
