@@ -7,86 +7,98 @@
     <title>Projects | Julia D.</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page">
 
-    <header class="main-header">
-        <div class="container header-inner">
-            <div class="logo">Julia<span>.</span></div>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">Julia<span>.</span></div>
             
-            <nav class="top-nav">
-                <ul class="nav-menu">
-                    <li><a href="index.html">About me</a></li>
-                    <li class="dropdown">
-                        <a href="index.html#skills">Skills ▾</a>
-                        <ul class="dropdown-content">
-                            <li><a href="index.html#skills">Tech Stack</a></li>
-                            <li><a href="index.html#skills">Tools</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
+            <nav class="nav">
+                <input type="checkbox" id="menu-toggle" class="nav__checkbox">
+                
+                <label for="menu-toggle" class="nav__sandwich">
+                    <span class="nav__sandwich-line"></span>
+                    <span class="nav__sandwich-line"></span>
+                    <span class="nav__sandwich-line"></span>
+                </label>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="dashboard.html" class="nav__link">Dashboard</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contacts</a></li>
                 </ul>
             </nav>
 
-            <div class="header-actions">
-                <audio src="media/the_mountain.mp3" controls class="mini-player"></audio>
-                <a href="https://github.com/Tomorrowllbethere" target="_blank" class="btn-outline">GitHub</a>
+            <div class="header__actions">
+                <audio src="media/the_mountain.mp3" controls class="header__player"></audio>
+                <a href="https://github.com/Tomorrowllbethere" target="_blank" class="btn btn_outline">GitHub</a>
             </div>
         </div>
     </header>
 
-    <main class="container all-projects-section">
-        <h1 class="page-title">My Projects</h1>
+    <main class="projects container">
+        <h1 class="projects__title">My Projects</h1>
 
-        <article class="project-detailed accent-outline">
-            <div class="media-box">
-                <video src="media\bee_game_simulator.mp4" controls class="media-content"></video>
+        <article class="project card-outline">
+            <div class="project__media">
+                <video src="media/bee_game_simulator.mp4" controls class="project__video"></video>
             </div>
-            <div class="info-box">
-                <h3>"Fly, bee, fly" game</h3>
-                <p>Gameplay demonstration. Built with PyGame. Object-oriented programming principles applied.</p>
-                <p class="project-meta">Uploaded: 25.01.2026</p>
-                <a href="https://github.com/Tomorrowllbethere/bee_game" target="_blank" class="btn-outline">View Code</a>
+            <div class="project__info">
+                <h3 class="project__subtitle">"Fly, bee, fly" game</h3>
+                <p class="project__desc">Gameplay demonstration. Built with PyGame. Object-oriented programming principles applied.</p>
+                <p class="project__meta">Uploaded: 25.01.2026</p>
+                <a href="https://github.com/Tomorrowllbethere/bee_game" target="_blank" class="btn btn_outline">View Code</a>
             </div>
         </article>
 
-        <article class="project-detailed accent-outline">
-            <div class="media-box">
-                <video src="media\assistyyou_simulator.mp4" class="media-content"></video>
+        <article class="project card-outline">
+            <div class="project__media">
+                <video src="media/assistyyou_simulator.mp4" class="project__video"></video>
             </div>
-            <div class="info-box">
-                <h3>Assist you</h3>
-                <p>Task management system backend architecture. Implemented with Django, Cloudinary and PostgreSQL.</p>
-                <p class="project-meta">Uploaded: 28.01.2026</p>
-                <a href="https://github.com/Tomorrowllbethere/assistant-project" target="_blank" class="btn-outline">View Code</a>
-            </div>
-        </article>
-        <article class="project-detailed accent-outline">
-            <div class="media-box">
-                <iframe src="https://www.youtube.com/embed/JysBFGEuYfM?si=rutJwmVIiknMXmtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="media-content"></iframe>
+            <div class="project__info">
+                <h3 class="project__subtitle">Assist you</h3>
+                <p class="project__desc">Task management system backend architecture. Implemented with Django, Cloudinary and PostgreSQL.</p>
+                <p class="project__meta">Uploaded: 28.01.2026</p>
+                <a href="https://github.com/Tomorrowllbethere/assistant-project" target="_blank" class="btn btn_outline">View Code</a>
             </div>
         </article>
-        <article class="project-detailed accent-outline">
-            <div class="media-box">
-                <h3>HTML-CSS game in process ...</h3>
-                <table class="tic-tac-toe">
-                    <tr><td>X</td><td></td><td>O</td></tr>
-                    <tr><td></td><td>X</td><td></td></tr>
-                    <tr><td>O</td><td></td><td>X</td></tr>
+        <article class="project card-outline">
+            <div class="project__media">
+                <iframe src="https://www.youtube.com/embed/JysBFGEuYfM?si=rutJwmVIiknMXmtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="project__iframe"></iframe>
+            </div>
+             <div class="project__info">
+                <h3 class="project__subtitle">Portfolio</h3>
+                <p class="project__desc"> See cozy video implemented with '<'iframe'>''.</p>
+                <p class="project__meta">Uploaded: 04.05.2026</p>
+                <a href="https://github.com/Tomorrowllbethere/portfolio" target="_blank" class="btn btn_outline">View Code</a>
+            </div>
+        </article>
+        <article class="project card-outline">
+            <div class="project__media">
+                <h3 class="project__subtitle">HTML-CSS game in process ...</h3>
+                <table class="game-board">
+                    <tr class="game-board__row"><td class="game-board__cell">X</td><td class="game-board__cell"></td><td class="game-board__cell">O</td></tr>
+                    <tr class="game-board__row"><td class="game-board__cell"></td><td class="game-board__cell">X</td><td class="game-board__cell"></td></tr>
+                    <tr class="game-board__row"><td class="game-board__cell">O</td><td class="game-board__cell"></td><td class="game-board__cell">X</td></tr>
                 </table>
             </div>
         </article>
     </main>
 
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Julia D. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="contact.html">Contacts</a>
-                <a href="https://www.linkedin.com/in/yuliia-diakiv/" target="_blank">LinkedIn</a>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">&copy; 2026 Julia D. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="contact.html" class="footer__link">Contacts</a>
+                <a href="https://www.linkedin.com/in/yuliia-diakiv/" target="_blank" class="footer__link">LinkedIn</a>
             </div>
         </div>
     </footer>
+    <a href="#" class="bubble">
+    <span class="bubble__icon">^</span>
+</a>
 
 </body>
 </html>
