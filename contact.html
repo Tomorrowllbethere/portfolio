@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Julia D.">
+    <title>Contact | Julia K.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">Julia<span>.</span></div>
+            
+           <nav class="nav">
+                <input type="checkbox" id="menu-toggle" class="nav__checkbox">
+                
+                <label for="menu-toggle" class="nav__sandwich">
+                    <span class="nav__sandwich-line"></span>
+                    <span class="nav__sandwich-line"></span>
+                    <span class="nav__sandwich-line"></span>
+                </label>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="dashboard.html" class="nav__link">Dashboard</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <audio src="media/the_mountain.mp3" controls class="header__player"></audio>
+                <a href="https://github.com/Tomorrowllbethere" target="_blank" class="btn btn_outline">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact container">
+        <section class="contact__wrapper card-outline">
+            <h1 class="contact__title">Let's Connect</h1>
+            <p class="contact__desc">I am open to new opportunities and interesting projects.</p>
+            
+            <a href="https://www.linkedin.com/in/yuliia-diakiv/" target="_blank" class="btn btn_primary btn_large btn_full">
+                Connect on LinkedIn
+            </a>
+
+            <div class="contact__divider"><span>OR SEND AN EMAIL</span></div>
+
+            <form action="#" class="form">
+                <input type="email" placeholder="Your Email" required class="form__input">
+                <input type="tel" placeholder="Your Phone (optional)" pattern="[0-9]{10}" class="form__input">
+                <input type="url" placeholder="Company Website URL" class="form__input">
+                <textarea placeholder="Your Message..." required rows="5" class="form__textarea"></textarea>
+                <button type="submit" class="btn btn_primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">&copy; 2026 Julia D. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="index.html" class="footer__link">Home</a>
+                <a href="https://www.linkedin.com/in/yuliia-diakiv/" target="_blank" class="footer__link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Backend Developer">
+    <title>Julia D. | Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">Julia<span>.</span></div>
+            
+            <nav class="nav">
+                <input type="checkbox" id="menu-toggle" class="nav__checkbox">
+                
+                <label for="menu-toggle" class="nav__sandwich">
+                    <span class="nav__sandwich-line"></span>
+                    <span class="nav__sandwich-line"></span>
+                    <span class="nav__sandwich-line"></span>
+                </label>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="dashboard.html" class="nav__link">Dashboard</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <audio src="media/the_mountain.mp3" controls class="header__player"></audio>
+                <a href="https://github.com/Tomorrowllbethere" target="_blank" class="btn btn_outline">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="about" class="hero container">
+            <aside class="hero__image-wrapper accent-outline">
+                <img src="img/me.jpg" alt="Profile" class="hero__img">
+            </aside>
+            <article class="hero__text">
+                <p class="hero__greeting">Hi, I'm Julia</p>
+                <h1 class="hero__title"><b>Software Engineer</b></h1>
+                <p class="hero__desc">I'm fixing issues, solving problems and optimizing everything.</p>
+                <div class="hero__btns">
+                    <a href="media/tester.pdf" download class="btn btn_primary">Download CV</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="skills" class="skills container">
+            <h2 class="section-title">Skills & Certificates</h2>
+            <ol class="skills__list">
+                <li class="skills__item accent-outline">
+                    <h3 class="skills__category-title">Backend Technology</h3>
+                    <ul class="skills__sublist">
+                        <li class="skills__tech"><b>Python</b> - Django, FastAPI</li>
+                        <li class="skills__tech"><b>C#</b> - .NET Core</li>
+                        <li class="skills__tech"><b>REST API</b> - Architecture</li>
+                    </ul>
+                </li>
+                <li class="skills__item accent-outline">
+                    <h3 class="skills__category-title">Databases & Tools</h3>
+                    <ul class="skills__sublist">
+                        <li class="skills__tech"><b>PostgreSQL</b> - Relational DB</li>
+                        <li class="skills__tech"><b>Redis</b> - Caching</li>
+                        <li class="skills__tech"><b>Git & Docker</b> - Version control & DevOps</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="projects-preview container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="carousel">
+                <button class="carousel__btn">&lt;</button>
+                
+                <div class="carousel__cards">
+                    <article class="project-card accent-outline">
+                        <img src="img/assist_you_welcome.png" alt="AssistYou" class="project-card__img">
+                        <h3 class="project-card__title">Assist you</h3>
+                        <p class="project-card__desc"> Django backend architecture for task management.</p>
+                    </article>
+                    <article class="project-card accent-outline">
+                        <img src="img/fly_bee.png" alt="Python Game" class="project-card__img">
+                        <h3 class="project-card__title">"Fly, Bee, Fly"</h3>
+                        <p class="project-card__desc">Built with PyGame. Object-oriented programming principles applied.</p>
+                    </article>
+                </div>
+                
+                <button class="carousel__btn">&gt;</button>
+            </div>
+
+            <div class="projects-preview__action">
+                <a href="projects.html" class="btn btn_primary">See more projects</a>
+            </div>
+        </section>
+
+        <section class="cta container">
+            <h2 class="cta__title">Let's build something worthy together...</h2>
+
+
+            <a href="contact.html" class="btn btn_primary btn_large">Contact Me</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">&copy; 2026 Julia D. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="contact.html" class="footer__link">Contacts</a>
+                <a href="https://www.linkedin.com/in/yuliia-diakiv/" target="_blank" class="footer__link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="bubble">
+    <span class="bubble__icon">^</span>
+</a>
+
+</body>
+</html>
